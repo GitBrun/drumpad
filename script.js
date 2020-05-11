@@ -17,12 +17,18 @@ function sound (ID)
 document.addEventListener("keydown", function(event) 
 {
     //At this moment i just try to put a transition when i play the beats on the keyboard, the next is at the bottom//
+    
     let eventWhichKey = event.which
-    const boum = document.querySelector(".boum")
+    //const boum = document.querySelector(".boum")
+    //const ding = document.querySelector(".ding")
 
-    boum.classList.add('playing')
-    boum.classList.remove('playing')
-    boum.classList.toggle('playing')
+    //boum.classList.add('playing')
+    //boum.classList.remove('playing')
+    //boum.classList.toggle('playing')
+
+    //ding.classList.add('playing')
+    //ding.classList.remove('playing')
+    //ding.classList.toggle('playing')
 
     //This is my function who permit to play the song with the keyboard//
     switch (eventWhichKey){
