@@ -10,6 +10,6 @@ Here is my first drumpad, to start with here are the features I've done 🤏
 
 🔑 I made a button at the top that launches a music by michael Jackson for your own remix!
 
-🔑 I try to make a transition when you play the beats in JS
+🔑 I make a transition when you play the beats in JS for the aesthetic
 
 SO NOW FREESTYLE 🎸

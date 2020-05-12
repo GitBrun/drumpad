@@ -6,7 +6,7 @@ body{
   margin: 0 auto;
  }
 
- /* LITTLE TITLE ANIMATION FROM CODEMYUI.COM (JUST FOR THE AESTHETIC) end at 204 */
+ /* LITTLE TITLE ANIMATION FROM CODEMYUI.COM (JUST FOR THE AESTHETIC) end at l.204 */
 
  .sign {
    position: absolute;
@@ -205,15 +205,15 @@ body{
  }
    /* END */
  
-      /* TO ADJUST THE VOLUME INTENSITY (1 features) */
+      /* TO ADJUST THE VOLUME INTENSITY */
 
    .volume{
       padding-left: 45%;
       background-color: #fd79a8;
    }
 
-    /* TO START THE MICKAEL JACKSON SONG (1 features) */
-
+    /* TO START THE MICKAEL JACKSON SONG */
+    
   .jackson{
     padding: 0;
     margin-top: 0 auto;
@@ -226,15 +226,16 @@ body{
     transition-duration: 0.4s;
     font-family: 'Audiowide', cursive;
     color: white;
-    padding: 10px 23px;
+    padding: 10px 20px;
     margin-left: 45%;
   }
 
-  .button:hover {
-    background-color: white;
+  .button:hover{
+    background-color: black;
     color: #fd79a8;
+    box-shadow: 1px 3px 5px black;
   }
-  
+
       /* ALL OF THE SONG FOR THE AESTHETIC : paragraph and div design*/
       
  .bass{
@@ -263,11 +264,6 @@ body{
     text-shadow: 0 0 5px black;
  }
 
- .ding:hover{
-   background-color: #fd79a8;
-   opacity: 0.7;
- }
-
  .dong{
     width: 150px;
     height: 150px;
@@ -275,11 +271,6 @@ body{
     border-radius: 10px;
     border: 4px solid black;
     text-shadow: 0 0 5px black;
-}
-
-.dong:hover{
-  background-color: #fd79a8;
-  opacity: 0.7;
 }
 
 .boum{
@@ -292,16 +283,6 @@ body{
     transition: all .09s;
 }
 
-.boum:hover{
-  background-color: #fd79a8;
-  opacity: 0.7;
-}
-
-.playing{
-  border-color: #fd79a8;
-  transform: scale(1.1)
- }
-
 .clap{
    display: flex;
    width: 100%;
@@ -311,8 +292,6 @@ body{
    align-items: flex-end;
    z-index: 1;
 }
-
-
 
 .clap p{
    color: #fd79a8;

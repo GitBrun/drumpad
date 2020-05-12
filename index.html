@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Bungee+Outline&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
-    <title>Drumpad By Brunks</title>
+ <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Bungee+Outline&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+        <title>Drumpad By Brunks</title>
     <link rel="icon" href="images/logo.jpg" type"logo">
-
-</head>
-<body>
+ </head>
+ <body>
 
     <!--This is my class for the beautifull neon title DRUMPAD-->
     <div class="sign">
         <span class="fast-flicker">D</span>RUM<span class="flicker">PA</span>D
     </div>
 
-    <!--This is my button for the mickael jackson song (features)-->
+    <!--This is my button for the mickael jackson song-->
     <div class="jackson">
         <button type="button" class="button">START BEATS</button>
         <audio class="back"> 
@@ -24,27 +23,27 @@
              </audio>  
     </div>
 
-    <!--This is my class for the volum (features)-->
+    <!--This is my class for the volum-->
     <div class="volume">
         <input class="soundVolume" type="range" value="5" min="1" max="10">
     </div>
 
     <!--Bass is my container for the beats bass-->
     <div class="bass">
-        <div class="boum"> <p>BASS<br>A</p> 
+        <div id="65" class=" moving boum"> <p>BASS<br>A</p> 
             <audio class="first"> 
             <source src="song/bass.wav"> </source>
              </audio>
              
         </div>
 
-        <div class="ding"> <p>BASS<br>Z</p>
+        <div id="90"class=" moving ding"> <p>BASS<br>Z</p>
             <audio class="two"> 
             <source src="song/bass2.wav"> </source>
             </audio> 
         </div>
 
-        <div class="dong"> <p>BASS<br>E</p>
+        <div id="69" class=" moving dong"> <p>BASS<br>E</p>
         <audio class="three"> 
             <source src="song/bass3.wav"> </source>
             </audio> 
@@ -54,19 +53,19 @@
 
      <!--clap is my second container for the beats clap-->
     <div class="clap">
-        <div class="boum"> <p>CLAP<br>Q</p> 
+        <div id="81" class="moving boum"> <p>CLAP<br>Q</p> 
             <audio class="four"> 
             <source src="song/clap1.wav"> </source>
             </audio> 
             </div>
 
-            <div class="ding"> <p>CLAP<br>S</p>
+            <div id="83" class=" moving ding"> <p>CLAP<br>S</p>
                 <audio class="five"> 
                 <source src="song/clap2.wav"> </source>
                 </audio> 
             </div>
     
-            <div class="dong"> <p>CLAP<br>D</p>
+            <div id="68" class=" moving dong"> <p>CLAP<br>D</p>
             <audio class="six"> 
                 <source src="song/clap3.wav"> </source>
                 </audio> 
@@ -75,5 +74,5 @@
     </div>
 
     <script src="script.js"></script>
-</body>
+ </body>
 </html>

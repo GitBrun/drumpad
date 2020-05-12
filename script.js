@@ -1,4 +1,16 @@
-//I put a features to adjust the volum of the beats as you want//
+//This is my Mickael Jackson song, a simple function to play the song//
+document.querySelector('.button').onclick = function () {
+
+    let audioMusic = new Audio('sonore.mp3')
+
+    audioMusic.src = "song/sonore.mp3"
+    audioMusic.loop = false
+    audioMusic.volume = 0.2
+    audioMusic.play()
+}
+
+
+//Is to adjust the volum of the beats as you want//
 function sound (ID) 
 {
     let sound = document.querySelector(ID)
@@ -13,26 +25,27 @@ function sound (ID)
 
 }
 
-//My beats play with the numer of the keyboard//
-document.addEventListener("keydown", function(event) 
-{
-    //At this moment i just try to put a transition when i play the beats on the keyboard, the next is at the bottom//
+//A beautifull transition when i play the beats on the keyboard//
+document.addEventListener("keydown", function(event){
     
     let eventWhichKey = event.which
-    //const boum = document.querySelector(".boum")
-    //const ding = document.querySelector(".ding")
+    let key = document.getElementById(eventWhichKey)
 
-    //boum.classList.add('playing')
-    //boum.classList.remove('playing')
-    //boum.classList.toggle('playing')
+    if(key){
+        key.style.background = "#fd79a8"
+    }
 
-    //ding.classList.add('playing')
-    //ding.classList.remove('playing')
-    //ding.classList.toggle('playing')
-
+    document.addEventListener('keyup', () =>{
+        let keys = document.getElementsByClassName('moving')
+        for (var i = 0 ; i < keys.length ; i++){
+            keys[i].style.background = null
+        }
+    })
+  
     //This is my function who permit to play the song with the keyboard//
     switch (eventWhichKey){
-
+  
+        //My beats play with the number of the keyboard//
         case 65:
             sound('.first')
             break
@@ -59,25 +72,3 @@ document.addEventListener("keydown", function(event)
     }
 })
 
-//I try to make a transition when we click on the keyboard to show which key play (features)//
-function removeTransition(e) {
-    if(e.propertyName !== 'transform') return
-    
-    console.log("end")
-}
-
-const bass = document.querySelector('.bass')
-bass.addEventListener('transitionend', removeTransition)
-
-
-//This is my Mickael Jackson song, a simple function (features)//
-
-document.querySelector('.button').onclick = function () {
-
-    let audioMusic = new Audio('sqsonore.mp3')
-
-    audioMusic.src = "song/sonore.mp3"
-    audioMusic.loop = false
-    audioMusic.volume = 0.3
-    audioMusic.play()
-}
